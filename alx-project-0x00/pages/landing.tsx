@@ -8,6 +8,9 @@ const Landing: React.FC =  () => {
       <Card />
       <Card />
       <Button title="Get Started" size="large" shape="rounded-full" className=" mt-3" />
+      <Button title="Get Started" size="medium" shape="rounded-sm" className=" mt-3" />
+      <Button title="Get Started" size="small" shape="rounded-md" className=" mt-3" />
+      <Button title="Get Started" size="small"  className=" mt-3 rounded-lg" />
 
     </div>
   )

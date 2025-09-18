@@ -1,16 +1,5 @@
+import { ButtonProps } from '@/interfaces';
 import React from 'react';
-
-type ButtonSize = 'small' | 'medium' | 'large';
-type ButtonShape = 'rounded-sm' | 'rounded-md' | 'rounded-full';
-
-interface ButtonProps {
-  title: string;
-  size?: ButtonSize;
-  shape?: ButtonShape;
-  onClick?: () => void;
-  className?: string; // Additional Tailwind classes
-}
-
 const Button: React.FC<ButtonProps> = ({
   title,
   size = 'medium',
