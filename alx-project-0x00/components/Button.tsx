@@ -5,7 +5,7 @@ const Button: React.FC<ButtonProps> = ({
   size = 'medium',
   shape = 'rounded-md',
   onClick,
-  className = '',
+  styles = '',
 }) => {
   // Map sizes to Tailwind classes
   const sizeClasses = {
@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   const combinedClasses = `
     ${sizeClasses[size]}
     ${shapeClasses[shape]}
-    ${className}
+    ${styles}
     bg-blue-500 text-white font-medium
     hover:bg-blue-600 transition-colors
     focus:outline-none focus:ring-2 focus:ring-blue-400

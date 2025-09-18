@@ -10,5 +10,5 @@ export interface ButtonProps {
   size?: ButtonSize;
   shape?: ButtonShape;
   onClick?: () => void;
-  className?: string; // Additional Tailwind classes
+  styles: string; // Additional Tailwind classes
 }
